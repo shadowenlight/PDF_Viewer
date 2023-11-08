@@ -1,0 +1,303 @@
+.book-type-label {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-border-width: 1.0;
+    -fx-text-fill: #3a7ad9;
+    -fx-font-weight: bold;
+}
+
+.book-type-cover {
+    -fx-border-color: black;
+    -fx-border-width: 1.0;
+    -fx-border-radius: 5.0;
+    -fx-border-style: solid;
+}
+
+.root {
+	-fx-background-color: #f5f5dc;
+	}
+	
+.scene{
+	-fx-background-color: #f5f5dc;
+}
+
+/* Set the font and font size for all text elements */
+.root, .button, .hyperlink {
+    -fx-font-family: "Arial", sans-serif;
+    -fx-font-size: 14.0px;
+}
+
+/* Header Styles */
+
+#heroBanner{
+	-fx-background-color: linear-gradient(to bottom, #704214, #A05220); /* Gradient background from top to bottom */    
+    -fx-padding: 10.0px; /* Add padding inside the banner */
+    -fx-alignment: center;
+}
+
+#heroBanner-text{
+	-fx-text-fill: #ffffff; /* Text color for the banner text */
+    -fx-font-size: 18.0; /* Font size for the banner text */
+    -fx-font-weight: bold;
+}
+
+/* Accordion Styles */
+
+/* Set the background color for the accordion content area */
+
+.titled-pane > .content {
+    -fx-background-color: #f5f5dc;
+    
+    -fx-background-image: 
+    	url(../view/lower-shelf-left-end.png), 
+    	url(../view/lower-shelf-middle-tile.png),
+    	url(../view/lower-shelf-right-end.png);
+    
+    -fx-background-position:
+    	left bottom,
+    	bottom,
+    	right bottom;
+    
+    -fx-background-repeat: 
+    	no-repeat,
+    	no-repeat, 
+    	no-repeat;
+    	
+    -fx-background-size:
+    	auto 104.0px,  /* 1st image */
+    	55.0% 104.0px,  /* 2nd image */
+    	auto 104.0px;  /* 3rd image */
+}
+
+.titled-pane{
+	-fx-text-fill: #a9957b;
+	-fx-background-color: transparent;
+}
+
+/* Set the background color for the accordion headers */
+.titled-pane > .title {    
+    -fx-background-color: transparent;
+	
+	    -fx-background-image: 
+    url(../view/higher-shelf-left-end.png), 
+    url(../view/higher-shelf-middle-tile.png),
+    url(../view/higer-shelf-right-end.png);
+    
+    -fx-background-position:
+    left center,
+    center,
+    right center;
+    
+    -fx-background-repeat: 
+    no-repeat,
+    no-repeat, 
+    no-repeat;
+    
+    -fx-background-size:
+    auto 124.0px,  /* 1st image */
+    55.0% 124.0px,  /* 2nd image */
+    auto 124.0px;  /* 3rd image */
+    
+    -fx-pref-height: 200.0px;
+    -fx-background-radius: 1.0;
+    -fx-border-color: transparent;
+    -fx-border-width: 1.0;
+    -fx-border-radius: 1.0;
+    
+    -fx-font-size: 16.0;
+    -fx-font-weight: bold;
+}
+
+.titled-pane > .title:hover, .title:pressed {    
+    -fx-font-size: 18.0;
+    -fx-effect: dropshadow(gaussian, rgba(0.0,0.0,0.0,0.3), 5.0, 0.0, 0.0, 0.0);
+    -fx-underline: false;
+}
+
+.titled-pane > .title > .arrow-button {
+    visibility: hidden;
+}
+
+/* Content Styles */
+
+/* Set the background color for the center content area */
+#centerBox {
+    -fx-background-color: #f5f5dc;
+}
+
+.scroll-pane > .viewport {
+   -fx-background-color: #f5f5dc;
+}
+
+/* Button Styles */
+
+/* Customize the "Downloads," "Delete," and "User" buttons */
+#deleteButton, #userButton, #downloadsButton {
+    -fx-background-color: transparent; /* Soft-dark blue background color */
+    -fx-background-insets: -5.0, 0.0, 0.0;
+    -fx-background-radius: 1.0; /* Setting background radius to create circular button */
+    -fx-border-color: transparent;
+    -fx-border-width: 1.0;
+    -fx-border-radius: 1.0; /* Setting background radius to create circular button */
+    -fx-text-fill: white; /* Setting text color to white */
+    -fx-padding: 2.0px 2.0px;
+}
+
+.button{
+	-fx-background-color: #a9957b;
+    -fx-text-fill: #ffffff;
+}
+
+/* Active button state */
+.button:pressed, .button:hover {
+    -fx-background-color: #7B3F00;
+}
+
+/* Active button state */
+#downloadsButton:pressed, #downloadsButton:hover,
+#deleteButton:pressed, #deleteButton:hover,
+#userButton:pressed, #userButton:hover {
+    -fx-effect: dropshadow(gaussian, rgba(0.0, 108.0, 250.0, 0.5), 5.0, 0.0, 0.0, 0.0);
+}
+
+/* Minimize and Close Button Styles */
+
+/* Customize the "Minimize" and "Close" buttons to match the color scheme */
+#minimizeButton, #closeButton {
+    -fx-background-color: transparent; /* Soft-dark blue background color */
+    -fx-background-radius: 1.0; /* Setting background radius to create circular button */
+    -fx-border-color: transparent;
+    -fx-text-fill: white; /* Setting text color to white */
+    -fx-padding: 2.0px 2.0px;
+}
+
+/* Active button state */
+#minimizeButton:pressed, #minimizeButton:hover {
+    -fx-effect: dropshadow(gaussian, rgba(0.0, 108.0, 250.0, 0.5), 5.0, 0.0, 0.0, 0.0);
+      
+}
+
+#closeButton:pressed, #closeButton:hover {
+    -fx-effect: dropshadow(gaussian, rgba(0.0, 108.0, 250.0, 0.5), 5.0, 0.0, 0.0, 0.0);
+}
+
+/* Logo Image Styles */
+
+/* Give the logo image some padding */
+#logoImageView {
+    -fx-padding: 10.0px;
+}
+
+/* Hyperlink Styles */
+
+#mobileLink, #webLink, #guideLinkk, #publisherLinkk {
+    -fx-spacing: 5.0;
+    -fx-padding: 1.0;
+    -fx-background-color: white; /* Background color for the hyperlink container */
+    -fx-background-radius: 5.0px;
+    -fx-border-color: transparent; /* Border color for the hyperlink container */
+    -fx-border-width: 1.0;
+    -fx-border-radius: 5.0; /* Border radius for the hyperlink container */
+}
+
+/* Style the hyperlinks */
+.hyperlink {
+    -fx-text-fill: #a9957b; /* Text color for the hyperlink */
+    -fx-font-size: 16.0; /* Font size for the hyperlink */
+    -fx-font-weight: bold;
+}
+
+/* Active hyperlink state */
+.hyperlink:pressed, .hyperlink:hover {
+    -fx-font-size: 18.0;
+    -fx-effect: dropshadow(gaussian, rgba(0.0,0.0,0.0,0.3), 5.0, 0.0, 0.0, 0.0);
+    -fx-underline: false;
+}
+
+.dialog-pane {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #3a7ad9;
+}
+
+.dialog-pane:header .header-panel {
+    -fx-background-color: #ffffff;
+}
+
+.dialog-pane:header .header-panel .label {
+    -fx-font-style: italic;
+    -fx-text-fill: #a9957b;
+}
+
+.text-field {
+    -fx-background-color: transparent;
+    -fx-border-color: #A52A2A;
+    -fx-background-radius: 5.0;
+    -fx-border-radius: 5.0;
+    -fx-padding: 5.0 10.0;
+    
+  	-fx-background-repeat: no-repeat;
+  	-fx-background-position: right center;
+}
+
+/* Style for the password field */
+.password-field {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #A52A2A; 
+    -fx-background-radius: 5.0;
+    -fx-border-radius: 5.0;
+    -fx-padding: 5.0 10.0;
+}
+
+
+.stage {
+    -fx-background-color: #ffffff; /* Semi-transparent black background */
+}
+
+/* GridPane Styles */
+
+/* Center the GridPane contents */
+.grid-pane {
+    -fx-alignment: center;
+}
+
+/* VBox Styles */
+
+/* Set the spacing between the VBox children */
+#bookListVBox {
+    -fx-spacing: 10.0;
+    -fx-background-color: transparent;
+    -fx-border-color: #954535;
+  	-fx-border-radius: 10.0px;
+  	-fx-padding: 20.0px;
+}
+
+#scrollPaneBook {
+  	-fx-background-color: white;
+  	-fx-border-color:#483C32;
+}
+
+/* ImageView Styles */
+
+/* Set the maximum width for the book cover image */
+.image-view {
+    -fx-fit-width: 150.0;
+    -fx-border-color:#483C32;
+    -fx-border-width: 5.0;
+    -fx-border-radius: 10.0;
+}
+
+#bookListVBox{
+    /* Add your styles for the book list VBox here */
+    /* For example: */
+    -fx-spacing: 0.0;
+}
+
+/* Styles for Book Cover ImageView */
+#bookCover {
+    -fx-border-color: black;
+    -fx-border-width: 10.0;
+    -fx-border-radius: 10.0;
+    -fx-border-style: solid;
+    -fx-fit-width: 150.0;
+    -fx-preserve-ratio: true;
+}

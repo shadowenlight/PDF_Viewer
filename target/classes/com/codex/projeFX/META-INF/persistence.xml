@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+                                 http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd"
+             version="2.2">
+    <persistence-unit name="myPersistenceUnit" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <class>com.demo.tahta.entities.BookEntity</class>
+        <class>com.demo.tahta.entities.CourseEntity</class>
+        <class>com.demo.tahta.entities.UserEntity</class>
+        <!-- Add mappings for your entity classes -->
+        
+        <properties>
+            <property name="jakerta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/akillitahta"/>
+            <property name="jakerta.persistence.jdbc.user" value="root"/>
+            <property name="jakerta.persistence.jdbc.password" value="U-us-389"/>
+            <property name="jakerta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect"/>
+            <property name="hibernate.hbm2ddl.auto" value="create"/>
+        </properties>
+    </persistence-unit>
+</persistence>

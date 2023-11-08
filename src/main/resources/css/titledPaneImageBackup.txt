@@ -1,0 +1,28 @@
+    -fx-background-image: 
+    url(../view/higher-shelf-left-end.png), 
+    url(../view/higher-shelf-middle-tile.png),
+    url(../view/higer-shelf-right-end.png);
+    
+    -fx-background-position:
+    left center,
+    center,
+    right center;
+    
+    -fx-background-repeat: 
+    no-repeat,
+    no-repeat, 
+    no-repeat;
+    
+    -fx-background-size:
+    auto 124px,  /* 1st image */
+    55% 124px,  /* 2nd image */
+    auto 124px;  /* 3rd image */
+    
+    -fx-pref-height: 200px;
+    -fx-background-radius: 1.0;
+    -fx-border-color: transparent;
+    -fx-border-width: 1.0;
+    -fx-border-radius: 1.0;
+    
+    -fx-font-size: 16.0;
+    -fx-font-weight: bold;
